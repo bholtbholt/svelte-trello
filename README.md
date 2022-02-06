@@ -57,3 +57,6 @@ afterEach(() => {
   store.reset();
 });
 ```
+
+https://github.com/rob-balfre/svelte-select
+https://github.com/isaacHagoel/svelte-dnd-action
