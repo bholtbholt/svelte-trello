@@ -12,9 +12,9 @@
   import IconTrash from './IconTrash.svelte';
 </script>
 
-<div id="card_{id}" class="p-2 bg-white rounded shadow space-y-2">
+<div id="card_{id}" class="p-2 bg-white rounded shadow space-y-2 max-w-lg">
   <header class="flex items-baseline">
-    <div class="flex items-baseline text-xl">
+    <div class="flex items-baseline">
       <input
         id="card_{id}_input"
         on:click={() => cards.update({ id, listId, complete: !complete })}

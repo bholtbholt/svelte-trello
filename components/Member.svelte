@@ -7,14 +7,9 @@
   export let pic;
   export let bgColor = 'bg-gray-200';
   export let textColor = 'text-black';
-
-  // TODO stop it from being a button
 </script>
 
-<button
-  on:click
-  id="member_{id}"
-  value={id}
+<span
   class="{className}
     px-2 py-1 rounded
     inline-block tracking-tightest
@@ -22,4 +17,4 @@
 >
   {pic}
   {name}
-</button>
+</span>

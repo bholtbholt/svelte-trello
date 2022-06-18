@@ -8,6 +8,7 @@
 
   import BoardHeader from './BoardHeader.svelte';
   import List from './List.svelte';
+  import ListForm from './ListForm.svelte';
 
   onMount(async () => {
     const response = await fetch('data.json');
@@ -20,8 +21,13 @@
 </script>
 
 <BoardHeader {name} />
-<main id="lists" class="flex gap-2 items-start">
+<main
+  id="lists"
+  class="flex gap-2 items-start
+    overflow-y-auto snap-mandatory snap-x"
+>
   {#each $filteredLists as { id, name, cards }}
     <List {id} {name} {cards} />
   {/each}
+  <ListForm />
 </main>

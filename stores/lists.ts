@@ -18,6 +18,15 @@ export const lists = (() => {
       const ordered = lists.sort((a, b) => a.position - b.position);
       set(ordered);
     },
+    add: (list: List) => {
+      update((lists: List[]) => {
+        lists.push(list);
+        return lists;
+      });
+    },
+    remove: (listId: ListId) => {
+      update((lists: List[]) => lists.filter((list) => list.id !== listId));
+    },
     update: (props: Partial<List>, fn: UpdateListFn = defaultUpdate(props)) => {
       update((lists: List[]) => {
         return lists.map((list) => (list.id === props.id ? fn(list) : list));

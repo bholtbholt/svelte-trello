@@ -8,5 +8,14 @@ export const members = (() => {
     subscribe,
     set,
     reset: () => set([]),
+    add: (member: User) => {
+      update((members: User[]) => {
+        members.push(member);
+        return members;
+      });
+    },
+    remove: (memberId: UserId) => {
+      update((members: User[]) => members.filter((member) => member.id !== memberId));
+    },
   };
 })();

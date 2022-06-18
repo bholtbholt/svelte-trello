@@ -35,7 +35,12 @@
   }
 </script>
 
-<div id="list_{id}" class="rounded-lg flex-1 p-2 bg-violet-300 shadow-lg">
+<div
+  id="list_{id}"
+  class="snap-start rounded-lg p-2
+    inline-block w-[300px]
+    bg-violet-300 shadow-lg"
+>
   <h2 class="text-lg font-bold mb-3">{name}</h2>
   <div
     class="space-y-2 mb-2 min-h-[2rem]"
