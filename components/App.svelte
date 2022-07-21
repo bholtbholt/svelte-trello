@@ -1,15 +1,33 @@
 <script lang="ts">
-  import Counter from './Counter.svelte';
+  let name = '';
+
+  import { onMount } from 'svelte';
+
+  import { members } from '@stores/members';
+  import { lists, filteredLists } from '@stores/lists';
+
+  import BoardHeader from './BoardHeader.svelte';
+  import List from './List.svelte';
+  import ListForm from './ListForm.svelte';
+
+  onMount(async () => {
+    const response = await fetch('data.json');
+    const data = await response.json();
+
+    name = data.name;
+    members.set(data.members);
+    lists.set(data.lists);
+  });
 </script>
 
-<main class="text-center">
-  <Counter />
-
-  <p class="text-indigo-700">
-    Visit
-    <a class="underline" target="_blank" href="https://svelte.dev">svelte.dev</a>
-    for Svelte docs and
-    <a class="underline" target="_blank" href="https://vitejs.dev">vitejs.dev</a>
-    for Vite docs.
-  </p>
+<BoardHeader {name} />
+<main
+  id="lists"
+  class="flex gap-2 items-start
+    overflow-y-auto snap-mandatory snap-x"
+>
+  {#each $filteredLists as { id, name, cards }}
+    <List {id} {name} {cards} />
+  {/each}
+  <ListForm />
 </main>
