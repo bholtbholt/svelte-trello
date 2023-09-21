@@ -1,0 +1,120 @@
+{
+  "id": "n2pk2q8BjlrA4U5p5bS-F",
+  "name": "Frieza's Kanban",
+  "members": [
+    {
+      "id": "GOKU-g20zlU-wWhtYPdHS",
+      "name": "Goku",
+      "pic": "☁️",
+      "bgColor": "bg-orange-200",
+      "textColor": "text-orange-900"
+    },
+    {
+      "id": "FRIEZA-2nbgN0bf0nxhFb",
+      "name": "Frieza",
+      "pic": "😈",
+      "bgColor": "bg-purple-200",
+      "textColor": "text-purple-900"
+    },
+    {
+      "id": "KRILLIN-vLcQTE3Ui2P3T",
+      "name": "Krillin",
+      "pic": "🌰",
+      "bgColor": "bg-red-200",
+      "textColor": "text-red-900"
+    },
+    {
+      "id": "GOHAN-OJHJdIFYmzJDO_J",
+      "name": "Gohan",
+      "pic": "🍙",
+      "bgColor": "bg-indigo-200",
+      "textColor": "text-indigo-900"
+    },
+    {
+      "id": "PICCOLO-fx5yCndH7QrXk",
+      "name": "Piccolo",
+      "pic": "🎵",
+      "bgColor": "bg-green-300",
+      "textColor": "text-green-900"
+    },
+    {
+      "id": "VEGETA-9rELcX_a7VPU1R",
+      "name": "Vegeta",
+      "pic": "🌶",
+      "bgColor": "bg-blue-800",
+      "textColor": "text-blue-50"
+    }
+  ],
+  "lists": [
+    {
+      "id": "TODO-ns88qrJDVXizlF0l",
+      "name": "Todo",
+      "position": 0,
+      "cards": [
+        {
+          "id": "6OPzS6B6WoBT0J_EGqUEy",
+          "listId": "TODO-ns88qrJDVXizlF0l",
+          "complete": false,
+          "title": "Get the Dragon Balls",
+          "assignedUserIds": ["FRIEZA-2nbgN0bf0nxhFb"]
+        }
+      ]
+    },
+    {
+      "id": "DONE-ELneCTQcW1u6BLoO",
+      "name": "Done",
+      "position": 2,
+      "cards": [
+        {
+          "id": "Zt4o91cgZsUXORYHnFAD-",
+          "listId": "DONE-ELneCTQcW1u6BLoO",
+          "complete": true,
+          "title": "Defeat Vegeta",
+          "assignedUserIds": ["FRIEZA-2nbgN0bf0nxhFb", "VEGETA-9rELcX_a7VPU1R"]
+        },
+        {
+          "id": "mSdpaL3AVQTmVsXrJP2xN",
+          "listId": "DONE-ELneCTQcW1u6BLoO",
+          "complete": true,
+          "title": "Defeat Piccolo",
+          "assignedUserIds": ["FRIEZA-2nbgN0bf0nxhFb", "PICCOLO-fx5yCndH7QrXk"]
+        },
+        {
+          "id": "wKWYE-6ZcDH9WONfs8_Ga",
+          "listId": "DONE-ELneCTQcW1u6BLoO",
+          "complete": true,
+          "title": "Defeat Gohan",
+          "assignedUserIds": ["FRIEZA-2nbgN0bf0nxhFb", "GOHAN-OJHJdIFYmzJDO_J"]
+        },
+        {
+          "id": "gTV6DNFAaeSxXGUYhg_3Y",
+          "listId": "DONE-ELneCTQcW1u6BLoO",
+          "complete": true,
+          "title": "Defeat Krillin",
+          "assignedUserIds": ["FRIEZA-2nbgN0bf0nxhFb", "KRILLIN-vLcQTE3Ui2P3T"]
+        }
+      ]
+    },
+    {
+      "id": "DOING-pm1QifG7nTuap3-",
+      "name": "Doing",
+      "position": 1,
+      "cards": [
+        {
+          "id": "MJgXkbOjZJomDfGIYQwzg",
+          "listId": "DOING-pm1QifG7nTuap3-",
+          "complete": false,
+          "title": "Destory Planet Namek",
+          "assignedUserIds": ["FRIEZA-2nbgN0bf0nxhFb"]
+        },
+        {
+          "id": "dK-hysWlguBkNUQXSwI3t",
+          "listId": "DOING-pm1QifG7nTuap3-",
+          "complete": false,
+          "title": "Defeat Goku",
+          "assignedUserIds": ["GOKU-g20zlU-wWhtYPdHS", "FRIEZA-2nbgN0bf0nxhFb"]
+        }
+      ]
+    }
+  ]
+}

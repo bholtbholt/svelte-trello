@@ -4,9 +4,8 @@
   export let disabled = false;
   export let theme = 'primary';
   const colors = {
-    primary: 'text-white bg-indigo-600 border-transparent',
-    secondary:
-      'text-indigo-800 bg-transparent border-indigo-800 hover:text-white focus:text-white',
+    primary: 'text-white bg-violet-600',
+    secondary: 'text-violet-800 bg-transparent hover:text-white focus:text-white',
   };
 
   import UISpinner from './UISpinner.svelte';
@@ -18,11 +17,9 @@
   class:opacity-75={disabled}
   class:cursor-not-allowed={disabled}
   class="{colors[theme] || colors.primary} {className}
-    border
-    hover:bg-indigo-800 focus:bg-indigo-800
-    focus:outline-none focus:ring focus:ring-offset-2
-    ring-indigo-400
-    rounded-lg px-5 py-2
+    hover:bg-violet-800 focus:bg-violet-800
+    focus:outline-none focus:ring ring-violet-500
+    rounded-lg px-3 py-2
     text-center whitespace-nowrap
     ease-out duration-200 transition-colors"
 >
